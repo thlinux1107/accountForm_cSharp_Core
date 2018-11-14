@@ -52,7 +52,6 @@ class MainClass
         Int32 timestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
 
         // Use JSON request from file.
-        // This will submit a sale using card data, return the result and a vault token.
         StreamReader sr = new StreamReader("accountvault.json");
         string jsonReq = sr.ReadToEnd();
         // Replace "@" placeholders in the JSON file with variables.
